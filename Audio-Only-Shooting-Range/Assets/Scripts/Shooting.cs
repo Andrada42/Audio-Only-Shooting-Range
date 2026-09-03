@@ -22,7 +22,11 @@ public class Shooting : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, range))
         {
-            // Debug.Log("Ma uit la obiectul: " + hit.collider.name);
+            if (hit.collider.transform.parent != null &&
+                hit.collider.transform.parent.CompareTag("Target"))
+            {
+                // Debug.Log("Ma uit la obiectul: " + hit.collider.name);
+            }
         }
     }
 
@@ -35,8 +39,15 @@ public class Shooting : MonoBehaviour
         if (Physics.Raycast(ray, out hit, range))
         {
             Debug.Log("Am lovit obiectul: " + hit.collider.name);
-        }
-
         
+            if (hit.collider.transform.parent != null &&
+                hit.collider.transform.parent.CompareTag("Target"))
+            {
+                if (GameManager.instance != null)
+                    GameManager.instance.AddToScore(10);
+
+                Destroy(hit.collider.transform.parent.gameObject);
+            }
+        }
     }
 }
