@@ -3,3 +3,6 @@
 Audio-Only-Shooting-Range/[Aa]ssets/Plugins/FMOD/platforms/**/lib/** binary
 Audio-Only-Shooting-Range/[Aa]ssets/Plugins/FMOD/platforms/**/lib/**/Info.plist text eol=lf
 Audio-Only-Shooting-Range/[Aa]ssets/Plugins/FMOD/platforms/**/lib/**/CodeResources text eol=lf
+
+Audio-Only-Shooting-Range/[Aa]ssets/Plugins/FMOD/**/*.bundle text eol=lf
+Audio-Only-Shooting-Range/[Aa]ssets/Plugins/FMOD/**/Info.plist text eol=lf
