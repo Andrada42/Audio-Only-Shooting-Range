@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{d46b08f4-a62e-4074-b0cd-b8759c1367c2}">
+		<property name="assetPath">
+			<value>AudioTests/708973__jghoffman418__future-86bpm-e-min.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>22.325578231292518</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{044c6bcd-d8da-4422-a8f2-2604b3aabbd5}</destination>
+		</relationship>
+	</object>
+</objects>

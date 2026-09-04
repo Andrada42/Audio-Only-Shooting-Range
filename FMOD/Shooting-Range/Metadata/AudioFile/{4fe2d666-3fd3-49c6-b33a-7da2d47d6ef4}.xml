@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{4fe2d666-3fd3-49c6-b33a-7da2d47d6ef4}">
+		<property name="assetPath">
+			<value>AudioTests/843084__hotpin7__ui-action-sound-effect.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.31868750000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{044c6bcd-d8da-4422-a8f2-2604b3aabbd5}</destination>
+		</relationship>
+	</object>
+</objects>

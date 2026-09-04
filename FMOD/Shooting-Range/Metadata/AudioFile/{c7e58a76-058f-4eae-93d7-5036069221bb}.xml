@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{c7e58a76-058f-4eae-93d7-5036069221bb}">
+		<property name="assetPath">
+			<value>AudioTests/862280__dimapain__sci-fi-synthesized-ui-interface-button-click-select-modern-futuristic-crisp-sharp-satisfying-game-audio-menu.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.1034999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{044c6bcd-d8da-4422-a8f2-2604b3aabbd5}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{c9f8392e-e0a7-4862-ba83-b0044122b2a2}">
+		<property name="assetPath">
+			<value>AudioTests/868363__bowesy__video-game_collectible-found.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.8035625</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{044c6bcd-d8da-4422-a8f2-2604b3aabbd5}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{32b45a98-5aeb-4bfe-b280-a44c0cf660f5}">
+		<property name="assetPath">
+			<value>AudioTests/435418__v-ktor__shoot01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.5651473922902495</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{044c6bcd-d8da-4422-a8f2-2604b3aabbd5}</destination>
+		</relationship>
+	</object>
+</objects>
