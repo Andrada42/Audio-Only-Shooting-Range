@@ -178,7 +178,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMaxDistance: 40
 --- !u!114 &8868028836442865681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,7 +221,7 @@ MonoBehaviour:
   transmissionHigh: 1
   maxTransmissionSurfaces: 1
   directMixLevel: 1
-  reflections: 0
+  reflections: 1
   reflectionsType: 0
   useDistanceCurveForReflections: 0
   currentBakedSource: {fileID: 0}
@@ -369,7 +369,7 @@ MonoBehaviour:
   transmissionHigh: 1
   maxTransmissionSurfaces: 1
   directMixLevel: 1
-  reflections: 0
+  reflections: 1
   reflectionsType: 0
   useDistanceCurveForReflections: 0
   currentBakedSource: {fileID: 0}
@@ -528,7 +528,7 @@ MonoBehaviour:
   transmissionHigh: 1
   maxTransmissionSurfaces: 1
   directMixLevel: 1
-  reflections: 0
+  reflections: 1
   reflectionsType: 0
   useDistanceCurveForReflections: 0
   currentBakedSource: {fileID: 0}

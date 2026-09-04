@@ -96,6 +96,7 @@
 		<relationship name="effects">
 			<destination>{875df733-1e24-4601-9d3b-6deedf17ad99}</destination>
 			<destination>{3a97d8cd-d432-4c83-9adb-b3722de55533}</destination>
+			<destination>{ea76fb03-428b-4d56-b673-2b51ea00a67f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ea893f52-1ded-45c8-8104-4d6160a70ff6}" />
@@ -104,6 +105,17 @@
 	<object class="PluginEffect" id="{3a97d8cd-d432-4c83-9adb-b3722de55533}">
 		<relationship name="plugin">
 			<destination>{922589e9-a79e-4bd4-aca5-c0e446b853ea}</destination>
+		</relationship>
+	</object>
+	<object class="MixerSend" id="{ea76fb03-428b-4d56-b673-2b51ea00a67f}">
+		<property name="level">
+			<value>-8</value>
+		</property>
+		<property name="inputFormat">
+			<value>5</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{c74dd136-5ca7-4c94-8b79-c94ff9018ecc}</destination>
 		</relationship>
 	</object>
 	<object class="Plugin" id="{922589e9-a79e-4bd4-aca5-c0e446b853ea}">
@@ -153,7 +165,6 @@
 		<property name="name">
 			<value>SourcePos</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-2</value>
 		</property>
@@ -162,7 +173,6 @@
 		<property name="name">
 			<value>OverallGain</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-1</value>
 		</property>
@@ -242,7 +252,7 @@
 			<value>ApplyRefl</value>
 		</property>
 		<property name="value">
-			<value>false</value>
+			<value>true</value>
 		</property>
 	</object>
 	<object class="BoolPluginParameter" id="{b4e48248-0154-4181-8d84-3fe4de22d72b}">
@@ -454,7 +464,7 @@
 			<value>ReflBinaural</value>
 		</property>
 		<property name="value">
-			<value>false</value>
+			<value>true</value>
 		</property>
 	</object>
 	<object class="FloatPluginParameter" id="{140623f1-c751-42a0-8335-e5d872c06303}">
@@ -462,7 +472,7 @@
 			<value>ReflMixLevel</value>
 		</property>
 		<property name="value">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,10.000000)}</value>
@@ -491,7 +501,6 @@
 		<property name="name">
 			<value>SimOutputs</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>0</value>
 		</property>
@@ -508,7 +517,6 @@
 		<property name="name">
 			<value>DistRange</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-6</value>
 		</property>

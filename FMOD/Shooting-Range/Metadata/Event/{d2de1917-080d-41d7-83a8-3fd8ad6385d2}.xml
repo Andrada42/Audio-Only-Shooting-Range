@@ -117,6 +117,9 @@
 		<property name="length">
 			<value>4.0014739229024947</value>
 		</property>
+		<property name="volume">
+			<value>4</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{684c6bc7-acb6-4958-96ec-4a4061216750}</destination>
 		</relationship>
@@ -165,6 +168,7 @@
 			<destination>{2eb9fc58-706d-4865-9ead-7ca9c2f72297}</destination>
 			<destination>{68c6c60f-cb1f-49ae-a9bd-8c1abd10d94c}</destination>
 			<destination>{ff86ce84-aa55-4fe6-9013-51d8f1932777}</destination>
+			<destination>{22cbcd84-b2d7-4548-8192-94bc89f8e92a}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ec2e5195-de8a-4da6-a6dc-702dd546a5ba}" />
@@ -188,6 +192,17 @@
 	<object class="GainEffect" id="{ff86ce84-aa55-4fe6-9013-51d8f1932777}">
 		<relationship name="automators">
 			<destination>{471667b5-5b7c-47ac-aed2-dcdc8a164780}</destination>
+		</relationship>
+	</object>
+	<object class="MixerSend" id="{22cbcd84-b2d7-4548-8192-94bc89f8e92a}">
+		<property name="level">
+			<value>-8</value>
+		</property>
+		<property name="inputFormat">
+			<value>5</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{c74dd136-5ca7-4c94-8b79-c94ff9018ecc}</destination>
 		</relationship>
 	</object>
 	<object class="AutomationPoint" id="{6ceb2c45-57f0-44c4-a78c-9788197e0075}">
@@ -362,7 +377,7 @@
 			<value>ApplyRefl</value>
 		</property>
 		<property name="value">
-			<value>false</value>
+			<value>true</value>
 		</property>
 	</object>
 	<object class="BoolPluginParameter" id="{e6b8e9c6-d4cb-48d1-a0a1-f9bb89b4ff5a}">
@@ -574,7 +589,7 @@
 			<value>ReflBinaural</value>
 		</property>
 		<property name="value">
-			<value>false</value>
+			<value>true</value>
 		</property>
 	</object>
 	<object class="FloatPluginParameter" id="{02047898-081e-40d0-96ae-092d1604a7a1}">
@@ -582,7 +597,7 @@
 			<value>ReflMixLevel</value>
 		</property>
 		<property name="value">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,10.000000)}</value>
@@ -682,10 +697,10 @@
 			<value>3.7927107061503413</value>
 		</property>
 		<property name="value">
-			<value>10</value>
+			<value>6</value>
 		</property>
 		<property name="curveShape">
-			<value>0.589788914</value>
+			<value>1</value>
 		</property>
 		<property name="isSCurve">
 			<value>true</value>
@@ -696,7 +711,7 @@
 			<value>90</value>
 		</property>
 		<property name="value">
-			<value>-22</value>
+			<value>-12</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{0dbdc6f8-72eb-4c52-b572-190ce8268afd}">
@@ -704,7 +719,7 @@
 			<value>35</value>
 		</property>
 		<property name="value">
-			<value>-15</value>
+			<value>-7</value>
 		</property>
 	</object>
 </objects>

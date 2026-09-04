@@ -83,7 +83,7 @@
 			<value>1.1034999999999999</value>
 		</property>
 		<property name="volume">
-			<value>5</value>
+			<value>7</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{c7e58a76-058f-4eae-93d7-5036069221bb}</destination>
@@ -99,6 +99,7 @@
 		<relationship name="effects">
 			<destination>{74a23fa2-0ce2-4452-9a0d-b3ba9c9972ac}</destination>
 			<destination>{74ca56b2-27b6-4386-9c6a-65c59a0aed09}</destination>
+			<destination>{99fefdf8-0cc8-46a7-9292-953b0899cba3}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{2e75b7e8-e922-49c9-a25c-75fa363181f8}" />
@@ -107,6 +108,17 @@
 	<object class="PluginEffect" id="{74ca56b2-27b6-4386-9c6a-65c59a0aed09}">
 		<relationship name="plugin">
 			<destination>{1f9791cd-519c-487b-9057-f71270ab47a9}</destination>
+		</relationship>
+	</object>
+	<object class="MixerSend" id="{99fefdf8-0cc8-46a7-9292-953b0899cba3}">
+		<property name="level">
+			<value>-7</value>
+		</property>
+		<property name="inputFormat">
+			<value>5</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{c74dd136-5ca7-4c94-8b79-c94ff9018ecc}</destination>
 		</relationship>
 	</object>
 	<object class="Plugin" id="{1f9791cd-519c-487b-9057-f71270ab47a9}">
@@ -156,7 +168,6 @@
 		<property name="name">
 			<value>SourcePos</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-2</value>
 		</property>
@@ -165,7 +176,6 @@
 		<property name="name">
 			<value>OverallGain</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-1</value>
 		</property>
@@ -245,7 +255,7 @@
 			<value>ApplyRefl</value>
 		</property>
 		<property name="value">
-			<value>false</value>
+			<value>true</value>
 		</property>
 	</object>
 	<object class="BoolPluginParameter" id="{d88689cf-2b9c-41f9-be3b-10471ef6f43e}">
@@ -457,7 +467,7 @@
 			<value>ReflBinaural</value>
 		</property>
 		<property name="value">
-			<value>false</value>
+			<value>true</value>
 		</property>
 	</object>
 	<object class="FloatPluginParameter" id="{c9d7957d-507b-4c25-a511-aa534da8ae40}">
@@ -465,7 +475,7 @@
 			<value>ReflMixLevel</value>
 		</property>
 		<property name="value">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,10.000000)}</value>
@@ -494,7 +504,6 @@
 		<property name="name">
 			<value>SimOutputs</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>0</value>
 		</property>
@@ -511,7 +520,6 @@
 		<property name="name">
 			<value>DistRange</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-6</value>
 		</property>
