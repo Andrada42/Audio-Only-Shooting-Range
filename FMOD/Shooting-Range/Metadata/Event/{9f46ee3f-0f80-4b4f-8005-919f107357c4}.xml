@@ -56,7 +56,11 @@
 			<destination>{15cc0cdf-c008-4994-86a8-033310e5dfb8}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{ccb6d5f5-e6b7-4f16-9802-711b8002873e}" />
+	<object class="EventAutomatableProperties" id="{ccb6d5f5-e6b7-4f16-9802-711b8002873e}">
+		<property name="maximumDistance">
+			<value>40</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{9b86dac1-64ad-46f6-9570-a3b71fb2304a}" />
 	<object class="Timeline" id="{98c56670-9e4e-4730-af25-4d72e31a423d}">
 		<relationship name="modules">
@@ -304,7 +308,7 @@
 			<value>DAMaxDist</value>
 		</property>
 		<property name="value">
-			<value>20</value>
+			<value>40</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,10000.000000)}</value>

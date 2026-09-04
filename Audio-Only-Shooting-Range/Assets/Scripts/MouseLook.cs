@@ -3,12 +3,15 @@ using UnityEngine.InputSystem;
 
 public class MouseLook : MonoBehaviour
 {
-    public float sensitivity = 10f;
+    public float sensitivity = 9f;
+    public float onTargetSensitivity = 6f;
+
 
     private float xRotation = 0f;
     private float yRotation = 0f;
     //    sus <= --xRotation++ => jos
     // stanga <= --yRotation++ => dreapta
+
 
     void Start()
     {
@@ -25,6 +28,8 @@ public class MouseLook : MonoBehaviour
         // mouseDelta = nr de pixeli cu care s-a deplasat mouse-ul fata de frame-ul anterior
         Vector2 mouseDelta = Mouse.current.delta.ReadValue();
 
+        // Debug.Log($"Dx = {mouseDelta.x}, Dy ={mouseDelta.y}");
+
         // Time.deltaTime   = durata dintre frame-ul curent si cel anterior, in secunde
         // * Time.deltaTime => nu depinde de nr de FPS, sensibilitatea se va simti la fel
         float mouseX = mouseDelta.x * sensitivity * Time.deltaTime;
@@ -35,8 +40,8 @@ public class MouseLook : MonoBehaviour
         yRotation += mouseX;
         xRotation -= mouseY;
 
-        // Nu putem sa ne rotim cu capul in jos / sub noi
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        // Nu putem sa ne rotim cu capul in jos
+        xRotation = Mathf.Clamp(xRotation, -89f, 89f);
 
         transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
     }

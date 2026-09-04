@@ -56,7 +56,11 @@
 			<destination>{15cc0cdf-c008-4994-86a8-033310e5dfb8}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{e4e6ace1-78df-45d9-9e69-5bc7904ba4cf}" />
+	<object class="EventAutomatableProperties" id="{e4e6ace1-78df-45d9-9e69-5bc7904ba4cf}">
+		<property name="maximumDistance">
+			<value>40</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{da8f6f96-df50-4f60-95c3-7a91b4d6ba43}" />
 	<object class="Timeline" id="{f7079372-d60f-4900-a5f0-51a06079b282}">
 		<relationship name="modules">
@@ -77,6 +81,9 @@
 	<object class="SingleSound" id="{762a34d1-db67-4c87-8c92-2aef36fb2dc0}">
 		<property name="length">
 			<value>1.1034999999999999</value>
+		</property>
+		<property name="volume">
+			<value>5</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{c7e58a76-058f-4eae-93d7-5036069221bb}</destination>
@@ -304,7 +311,7 @@
 			<value>DAMaxDist</value>
 		</property>
 		<property name="value">
-			<value>20</value>
+			<value>40</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,10000.000000)}</value>

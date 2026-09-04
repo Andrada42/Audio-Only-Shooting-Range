@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class TargetSpawner : MonoBehaviour
 {
@@ -11,8 +12,12 @@ public class TargetSpawner : MonoBehaviour
     public float minHeight = 1f;
     public float maxHeight = 10f;
 
+    [Header("Spawn Range")]
+    public float respawnDelay = 1.5f;
+
 
     private GameObject currentTarget;
+    private bool isWaitingToSpawn = false;
     
 
     void Start()
@@ -22,10 +27,21 @@ public class TargetSpawner : MonoBehaviour
 
     void Update()
     {
-        if (currentTarget == null)
+        if (currentTarget == null && !isWaitingToSpawn)
         {
-            SpawnTarget();
+            StartCoroutine(SpawnRoutine());    // Corutina = functie ce poate fi pusa pe pauza si apoi reluata, fara sa blocheze jocul
         }
+    }
+
+    IEnumerator SpawnRoutine()  // IEnumerator => Corutina
+    {
+        isWaitingToSpawn = true;
+
+        yield return new WaitForSeconds(respawnDelay);  // returneaza obiectul de tip WaitForSeconds => Unity stie cat sa astepte => apoi revine inapoi
+
+        SpawnTarget();
+
+        isWaitingToSpawn = false;
     }
 
     void SpawnTarget()
