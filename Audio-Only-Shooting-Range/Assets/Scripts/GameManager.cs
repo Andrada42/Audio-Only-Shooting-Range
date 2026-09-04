@@ -1,5 +1,9 @@
-using UnityEngine;
+using FMOD.Studio;
+using FMODUnity;
+using NaughtyAttributes;
 using TMPro;
+using STOP_MODE = FMOD.Studio.STOP_MODE;
+using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,10 +18,16 @@ public class GameManager : MonoBehaviour
 
     [Header("Time")]
     public float timeRemaining = 60f;
+    public float actionTime = 20f;      // Ultimele cate secunde vom rula melodia din regiunea Action
+
+
+    [SerializeField, BoxGroup("FMOD Events")]
+    private EventReference musicEvent;
 
 
     private bool gameIsActive = true;   // false cand se termina timpul
-
+    private int musicState = 0;
+    private EventInstance musicEventInstance;
 
     void Awake()    // Singleton
     {
@@ -30,12 +40,27 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         UpdateScoreUI();
+        musicEventInstance = RuntimeManager.CreateInstance(musicEvent);
+        musicEventInstance.setParameterByName("MusicState", 0);
+        musicEventInstance.start();
     }
 
-    void Update()
+    private void OnDestroy()
+    {
+        musicEventInstance.stop(STOP_MODE.ALLOWFADEOUT);    // pentru sunetele looped
+        musicEventInstance.release();
+    }
+
+        void Update()
     {
         if (!gameIsActive)
             return;
+
+        if (timeRemaining <= actionTime && musicState == 0)
+        {
+            musicState = 1;
+            musicEventInstance.setParameterByName("MusicState", musicState);
+        }
 
         if (timeRemaining > 0)
         {

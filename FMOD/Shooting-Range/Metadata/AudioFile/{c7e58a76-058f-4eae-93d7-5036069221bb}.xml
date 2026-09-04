@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{c7e58a76-058f-4eae-93d7-5036069221bb}">
 		<property name="assetPath">
-			<value>AudioTests/862280__dimapain__sci-fi-synthesized-ui-interface-button-click-select-modern-futuristic-crisp-sharp-satisfying-game-audio-menu.wav</value>
+			<value>AudioClips/862280__dimapain__sci-fi-synthesized-ui-interface-button-click-select-modern-futuristic-crisp-sharp-satisfying-game-audio-menu.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>96</value>

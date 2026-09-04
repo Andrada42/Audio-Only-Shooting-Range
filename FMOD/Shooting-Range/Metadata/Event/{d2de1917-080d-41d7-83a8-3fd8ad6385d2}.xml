@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{d2de1917-080d-41d7-83a8-3fd8ad6385d2}">
 		<property name="name">
-			<value>Sonification</value>
+			<value>TargetSonification</value>
 		</property>
 		<property name="outputFormat">
 			<value>5</value>
@@ -61,7 +61,7 @@
 			<destination>{dc6af764-2045-45f5-8f3f-aed081dba7f0}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{15cc0cdf-c008-4994-86a8-033310e5dfb8}</destination>
+			<destination>{50e15335-b9f3-4910-aa67-92cda3ee565e}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{4587d935-f2e3-4dc3-8e13-f10df1972b62}">
@@ -90,6 +90,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{38297342-a186-4c1f-bd9b-4c6edb4a84e7}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<relationship name="automators">
 			<destination>{aae2316a-6d32-4e67-b8fb-425dd88e4eb8}</destination>
 		</relationship>

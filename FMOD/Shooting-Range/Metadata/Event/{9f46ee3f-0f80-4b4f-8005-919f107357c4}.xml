@@ -53,7 +53,7 @@
 			<destination>{60ad9d74-e243-48d7-a4ad-b888219d9be6}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{15cc0cdf-c008-4994-86a8-033310e5dfb8}</destination>
+			<destination>{9dd84a10-cec9-479e-b009-2375dc1cfbd0}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{ccb6d5f5-e6b7-4f16-9802-711b8002873e}">
@@ -81,6 +81,9 @@
 	<object class="SingleSound" id="{1680d60b-08e9-449e-b958-d3e674149716}">
 		<property name="length">
 			<value>3.8035625</value>
+		</property>
+		<property name="volume">
+			<value>8</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{c9f8392e-e0a7-4862-ba83-b0044122b2a2}</destination>

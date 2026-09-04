@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{416ff885-0afe-4fe0-a23e-bf46e20523a1}">
 		<property name="assetPath">
-			<value>AudioTests/167385__ultradust__wood-block-tick-tock-cartoon-clock.wav</value>
+			<value>AudioClips/167385__ultradust__wood-block-tick-tock-cartoon-clock.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

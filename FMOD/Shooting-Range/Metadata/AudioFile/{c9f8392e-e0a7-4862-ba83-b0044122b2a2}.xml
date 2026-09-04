@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{c9f8392e-e0a7-4862-ba83-b0044122b2a2}">
 		<property name="assetPath">
-			<value>AudioTests/868363__bowesy__video-game_collectible-found.wav</value>
+			<value>AudioClips/868363__bowesy__video-game_collectible-found.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

@@ -315,7 +315,7 @@ MonoBehaviour:
       Data2: 1104611341
       Data3: -666916733
       Data4: -763010131
-    Path: event:/Sonification
+    Path: event:/targetSonification
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2

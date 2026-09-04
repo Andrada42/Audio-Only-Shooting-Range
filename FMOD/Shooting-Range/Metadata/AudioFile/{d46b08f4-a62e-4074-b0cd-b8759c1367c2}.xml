@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{d46b08f4-a62e-4074-b0cd-b8759c1367c2}">
 		<property name="assetPath">
-			<value>AudioTests/708973__jghoffman418__future-86bpm-e-min.wav</value>
+			<value>Music/708973__jghoffman418__future-86bpm-e-min.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

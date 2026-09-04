@@ -858,8 +858,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 600b09e4a039a334b9a7ede13ec87598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseLook
-  sensitivity: 9
-  onTargetSensitivity: 6
+  sensitivity: 5
+  onTargetSensitivity: 1
 --- !u!114 &330585551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5910,6 +5910,14 @@ MonoBehaviour:
   timerText: {fileID: 1779022071}
   score: 0
   timeRemaining: 60
+  actionTime: 20
+  musicEvent:
+    Guid:
+      Data1: -1387634575
+      Data2: 1161869522
+      Data3: 1241716661
+      Data4: 50352969
+    Path: event:/BackgroundMusic
 --- !u!1 &2146481622
 GameObject:
   m_ObjectHideFlags: 0

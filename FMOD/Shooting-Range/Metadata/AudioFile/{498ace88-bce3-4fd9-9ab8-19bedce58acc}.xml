@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{498ace88-bce3-4fd9-9ab8-19bedce58acc}">
 		<property name="assetPath">
-			<value>AudioTests/793601__itsjowy__bonification_coin_collect_2.wav</value>
+			<value>AudioClips/793601__itsjowy__bonification_coin_collect_2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
