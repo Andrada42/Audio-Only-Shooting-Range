@@ -18,18 +18,25 @@ public class TargetSpawner : MonoBehaviour
 
     private GameObject currentTarget;
     private bool isWaitingToSpawn = false;
-    
+    private bool firstToSpawn = true;
 
-    void Start()
-    {
-        SpawnTarget();
-    }
 
     void Update()
     {
+        if (!GameManager.instance.GameIsActive)
+        {
+            firstToSpawn = true;
+            return;
+        }
+
         if (currentTarget == null && !isWaitingToSpawn)
         {
-            StartCoroutine(SpawnRoutine());    // Corutina = functie ce poate fi pusa pe pauza si apoi reluata, fara sa blocheze jocul
+            if (firstToSpawn){
+                firstToSpawn = false;
+                SpawnTarget();
+            }
+            else
+                StartCoroutine(SpawnRoutine());    // Corutina = functie ce poate fi pusa pe pauza si apoi reluata, fara sa blocheze jocul
         }
     }
 
@@ -39,6 +46,11 @@ public class TargetSpawner : MonoBehaviour
 
         yield return new WaitForSeconds(respawnDelay);  // returneaza obiectul de tip WaitForSeconds => Unity stie cat sa astepte => apoi revine inapoi
 
+        if (!GameManager.instance.GameIsActive)
+        {
+            isWaitingToSpawn = false;
+            yield break;    // Oprim corutina
+        }
         SpawnTarget();
 
         isWaitingToSpawn = false;

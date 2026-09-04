@@ -3,8 +3,13 @@ using UnityEngine.InputSystem;
 
 public class MouseLook : MonoBehaviour
 {
-    public float sensitivity = 9f;
-    public float onTargetSensitivity = 6f;
+    [Header("Sensitivity")]
+    public float sensitivity = 5.5f;
+    public float onTargetSensitivity = 1f;
+
+    [Header("Initial Rotation (Degrees)")]
+    [Range(-89f, 89f)] public float initialXRotation = 2f;
+    [Range(-89f, 89f)] public float initialYRotation = 2f;
 
 
     private float xRotation = 0f;
@@ -15,12 +20,21 @@ public class MouseLook : MonoBehaviour
 
     void Start()
     {
-        // Ascunde cursorul si il blocheaza in mijlocul ecranului
-        Cursor.lockState = CursorLockMode.Locked;
+        xRotation = initialXRotation;
+        yRotation = initialYRotation;
+        transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
     }
 
     void Update()
     {
+        if (!GameManager.instance.GameIsActive)
+        {
+            xRotation = initialXRotation;
+            yRotation = initialYRotation;
+            transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+            return;
+        }
+
         if (Mouse.current == null)
             return;
 

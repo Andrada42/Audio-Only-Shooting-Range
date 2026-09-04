@@ -32,6 +32,9 @@ public class Shooting : MonoBehaviour
 
     void Update()
     {
+        if (!GameManager.instance.GameIsActive)
+            return;
+
         CheckForTarget();
 
         if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
